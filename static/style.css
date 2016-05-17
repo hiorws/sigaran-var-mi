@@ -3,6 +3,14 @@
       color: #fff;
  }
 
+.cigarette{
+    background-color: #fff;
+    padding-left: 10%;
+    padding-top: 10%;
+    padding-right: 10%;
+    padding-bottom: 10%;
+}
+
 @font-face {
     font-family: "My Custom Font";
     src: url(font/header.ttf) format("truetype");
