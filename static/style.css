@@ -1,0 +1,65 @@
+.main { 
+      background-color: #000;
+      color: #fff;
+ }
+
+@font-face {
+    font-family: "My Custom Font";
+    src: url(font/header.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "subhead";
+	src: url(font/subhead.ttf) format("truetype");
+}
+
+h3.customfont { 
+    font-family: "My Custom Font", Verdana, Tahoma;
+    font-size: 72px;
+    letter-spacing: 2px;
+}
+
+h3.subhead{
+	font-family: "subhead", Verdana, Tahoma;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+.w3-btn{width:150px;}
+
+.pad {
+	padding: 80px 120px;
+	letter-spacing: 2px;
+}
+
+ .container {
+    padding: 80px 120px;
+}
+
+ .container2 {
+ 	background-color: #999;
+    padding: 80px 120px;
+}
+
+
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail p {
+      margin-top: 15px;
+      color: #555;
+  }
+  .btn {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #f1f1f1;
+      border-radius: 0;
+      transition: .2s;
+  }
+  .btn:hover, .btn:focus {
+      border: 1px solid #333;
+      background-color: #fff;
+      color: #000;
+  }
