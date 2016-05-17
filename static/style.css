@@ -1,7 +1,17 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+  
+}
 .main { 
       background-color: #000;
       color: #fff;
  }
+
+.container2 {
+      background-color: #999;
+      padding: 80px 120px;
+}
 
 .cigarette{
     background-color: #fff;
@@ -71,3 +81,108 @@ h3.subhead{
       background-color: #fff;
       color: #000;
   }
+
+  #triangle-topleft { 
+    width: 0; 
+    height: 0; 
+    border-top: 100px solid black; 
+    border-right: 100px solid transparent; 
+  }
+
+#triangle-bottomright { 
+  width: 0; 
+  height: 0; 
+  border-bottom: 100px solid black; 
+  border-left: 100px solid transparent; 
+  margin-right: 5px; 
+}
+
+/*start of link effect*/
+nav a {
+  position: relative;
+  display: inline-block;
+  margin: 45px 25px;
+  outline: none;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-shadow: 0 0 1px rgba(255,255,255,0.3);
+  font-size: 1.5em;
+}
+
+nav a:hover,
+nav a:focus {
+  outline: none;
+}
+
+.ij-effect-18 {
+  position: relative;
+  z-index: 1;
+}
+
+.ij-effect-18 a {
+  padding: 0 5px;
+  color: #956106;
+  font-weight: 700;
+  -webkit-transition: color 0.3s;
+  -moz-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.ij-effect-18 a::before,
+.ij-effect-18 a::after {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  margin-top: -1px;
+  background: #956106;
+  content: '';
+  z-index: -1;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  -moz-transition: -moz-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  pointer-events: none;
+}
+
+.ij-effect-18 a::before {
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  transform: translateY(-20px);
+}
+
+.ij-effect-18 a::after {
+  -webkit-transform: translateY(20px);
+  -moz-transform: translateY(20px);
+  transform: translateY(20px);
+}
+
+.ij-effect-18 a:hover,
+.ij-effect-18 a:focus {
+  color: #fff;
+}
+
+.ij-effect-18 a:hover::before,
+.ij-effect-18 a:hover::after,
+.ij-effect-18 a:focus::before,
+.ij-effect-18 a:focus::after {
+  opacity: 0.7;
+}
+
+.ij-effect-18 a:hover::before,
+.ij-effect-18 a:focus::before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.ij-effect-18 a:hover::after,
+.ij-effect-18 a:focus::after {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+/*end of link effect*/
