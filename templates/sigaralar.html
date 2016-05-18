@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <div class="sigaralar">
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Yer</th>
+                <th>Kaç dal?</th>
+                <th>Karşılık</th>
+                <th>Ateşle Dönsün</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for sigara in cigarettes %}
+            <tr class="success">
+              <td>{{ sigara[0] }}</td>
+              <td>{{ sigara[2] }}</td>
+              <td>{{ sigara[3] }}</td>
+              <td>{{ sigara[4] }}</td>
+              <td><button type="button" class="btn btn-info">Talip ol!</button></td>
+            </tr>
+        {% endfor %}
+        </tbody>
+
+    </table>
+
+    </div>
+
+{% endblock %}
