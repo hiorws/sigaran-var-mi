@@ -1,9 +1,22 @@
-{% extends "base.html" %}
+<!doctype html>
 
-{% block content %}
+<head>
+<meta charset="UTF-8">
+    <meta name="description" content="Ateşlesene Bi Dal!">
+    <meta name="keywords" content="Ateşlesene Bi Dal!">
+    <meta name="author" content="hiorws">
+    <meta http-equiv="refresh" content="5;url={{ url_for('cigarattes') }}" />
+    <title>Sigara ateşlendi</title>
+    <link rel="stylesheet" href="static/style.css" type="text/css">
+    <link rel="stylesheet" href="static/w3.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="{{url_for('.static', filename='bootstrap.css')}}">
+</head>
+
 
     <div class="record">
         <h3>Sigaranız kaydedildi. Keyifli günler.</h3>
+        <h4>Sigaralar sayfasına yönlendiriliyorsunuz.</h4>
     </div>
 
-{% endblock %}
+

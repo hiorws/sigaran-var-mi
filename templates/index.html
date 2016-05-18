@@ -9,45 +9,48 @@
             <img src="static/img/logo.png" alt="Ateslesene bi dal!" width="200" height="200">
             <h3 class="subhead">Sosyal Cuhara Paylaşım Platformu</h3>
             <br>
-            <a href="#" class="w3-btn w3-white w3-hover-red w3-round w3-slim pad" role="button">Moruk Var mı Bir Şeyler
+            <a href="#sigara" class="w3-btn w3-white w3-hover-red w3-round w3-slim pad" role="button">Moruk Var mı Bir Şeyler
                 ?</a>
-            <a href="#" class="w3-btn w3-white w3-hover-dark-grey w3-round w3-slim pad" role="button">Hadi Size Güzellik
+            <a href="#kayit" class="w3-btn w3-white w3-hover-dark-grey w3-round w3-slim pad" role="button">Hadi Size Güzellik
                 Yapayım !</a>
         </div>
     </div>
 
    <!-- <div class="opened">-->
+    <a name="sigara">
     <div class="container2 fluid">
         <div class="row text-center">
             <div id="triangle-topleft"></div>
-            <center><nav class="ij-effect-18"><a href="#" data-hover="Effect 18">Var Bir Şeyler, Hepsini Gör !</a></nav></center>
+            <center><nav class="ij-effect-18"><a href="{{ url_for('cigarattes') }}" data-hover="Effect 18">Var Bir Şeyler, Hepsini Gör !</a></nav></center>
            <div align="right"><div id="triangle-bottomright"></div></div>
         </div>
     </div>
+    </a>
 
+    <a name="kayit">
     <div class="row text-center">
     <div class="cigarette">
-        <form>
+        <form action="{{ url_for('record_cigarette') }}" method="post">
             <fieldset class="form-group">
                 <div align="left"><label for="location">Nerdesin ?</label></div>
-                <input type="text" class="form-control" id="location" placeholder="Kütüphane">
+                <input type="text" class="form-control" id="location" placeholder="Kütüphane" name="location">
             </fieldset>
             <div align="left">
             <fieldset class="form-group">
-                <select class="c-select">
-                  <option selected>Karşılık beklemiyorum</option>
-                  <option value="1">Bi çayını içerim</option>
-                  <option value="2">Kanki sende rus numarası var mı?</option>
-                  <option value="3">Sen de beni görürsün bi ara</option>
+                <select class="c-select" name="price">
+                  <option selected value="Karşılık beklemiyorum">Karşılık beklemiyorum</option>
+                  <option value="Bi çayını içerim">Bi çayını içerim</option>
+                  <option value="Kanki sende rus numarası var mı?">Kanki sende rus numarası var mı?</option>
+                  <option value="Sen de beni görürsün bi ara">Sen de beni görürsün bi ara</option>
                 </select>
             </fieldset></div>
             <fieldset class="form-group">
                 <div align="left"><label for="dal">Max Dal :</label></div>
-                <input type="number" class="form-control" id="dal" placeholder="3">
+                <input type="number" class="form-control" id="dal" placeholder="3" name="dal">
             </fieldset>
             <fieldset class="form-group">
                 <div align="left"><label for="email">Email :</label></div>
-                <input type="text" class="form-control" id="email" placeholder="bacagibituten@std.iyte.edu.tr">
+                <input type="text" class="form-control" id="email" placeholder="bacagibituten@std.iyte.edu.tr" name="email">
             </fieldset>
             <fieldset class="form-group">
                 <button type="submit" class="btn btn-primary">Ateşle!</button>
@@ -55,6 +58,7 @@
         </form>
     </div>
     </div>
+    </a>
 
 
 {% endblock %}
