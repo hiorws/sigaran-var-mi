@@ -15,10 +15,15 @@ body {
 
 .cigarette{
     background-color: #fff;
-    padding-left: 10%;
-    padding-top: 10%;
-    padding-right: 10%;
-    padding-bottom: 10%;
+    padding: 10%;
+}
+
+.sigaralar{
+    padding: 10%;
+}
+
+tr{
+    text-align: left;
 }
 
 @font-face {
